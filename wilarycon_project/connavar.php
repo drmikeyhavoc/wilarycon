@@ -7,6 +7,7 @@
 		<div>Connavar is my only boy and heir to the throne</div>
 		
 		<p>This will be my first paragraph</p>
+		<p>This will be my second paragraph</p>
 		
 	</body>
 </html>
