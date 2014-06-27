@@ -1,0 +1,19 @@
+<?php
+$connect = "";
+$tableName = "";
+
+function addTopic($connect, $tableName) {
+			// escape variables for security
+			$topic = mysqli_real_escape_string($connect, $_POST['']);# fields you want to add
+			$content = mysqli_real_escape_string($connect, $_POST['']);
+			$insertValues = "INSERT INTO $tableName (topic_ID, topic_heading, topic_content, timestamp)
+			VALUES (NULL,'$topic','$content',CURRENT_TIMESTAMP)";
+
+			if (!mysqli_query($connect, $insertValues)) {
+				die('Error: ' . mysqli_error($connect));
+			}
+			echo "<h4>Record Added</h4>";
+		}
+
+
+?>

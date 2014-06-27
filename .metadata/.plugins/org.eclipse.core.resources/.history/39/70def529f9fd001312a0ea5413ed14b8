@@ -1,0 +1,16 @@
+<?php
+$connect ="";
+$table ="";
+function deleteTopic($connect, $table) {
+			if (isset($_POST['id'])) { # unique id of the row to delete. Usually hidden form etc
+				$id_to_delete = mysqli_real_escape_string($connect, $_POST['id']); #Same here
+				$delete = "DELETE FROM $table WHERE ID=$id_to_Delete";
+				$success = mysqli_query($connect, $delete);
+				if ($success) {header("Location: index.php");
+				} else {"Could not delete record";
+				}
+			} else {echo 'Not Found';
+			}
+		}
+
+?>

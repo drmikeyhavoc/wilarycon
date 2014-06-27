@@ -1,0 +1,18 @@
+$user = '';
+$pass = '';
+$host = '';
+$db = '';
+$table = '';
+
+
+#below is my php code that establishes a connection to the server and then checks to see if it is indeed connected
+$connect = mysqli_connect($host, $user, $pass);
+#otherwise it gives an error
+if (mysqli_connect_errno()) {
+	echo "Failed to connect to MySQL<br>" . mysqli_connect_error();
+	#or confirmation
+} else {echo "You have connected to the Database Server successfully<br>";
+}
+
+if (isset($_POST[''])) { $variable = $_POST[''];
+	function name or header

@@ -1,0 +1,19 @@
+<?php
+$connect = "";
+$tableName = "";
+
+function addTopic($connect, $tableName) {
+			// escape variables for security
+			$fieldOne= mysqli_real_escape_string($connect, $_POST['']);# fields you want to add
+			$fieldTwo = mysqli_real_escape_string($connect, $_POST['']);
+			$insertValues = "INSERT INTO $tableName (field names here)
+			VALUES ( field values here)";
+
+			if (!mysqli_query($connect, $insertValues)) {
+				die('Error: ' . mysqli_error($connect));
+			}
+			echo "<h4>Record Added</h4>";
+		}
+
+
+?>
