@@ -2,6 +2,7 @@
 
 //Will have variables such as $user, $password, $db etc
 $database = "";
+$connection = "";
 
 //This is my code snippet for creating a database. I will modify it as required
 
